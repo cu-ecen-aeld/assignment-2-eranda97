@@ -30,6 +30,6 @@ $(FILE_RESULT): $(TARGET)
 
 # Clean target
 clean:
-	rm -f $(TARGET) *.o $(FILE_RESULT)
+	rm -f $(TARGET) $(OBJS)
 
 .PHONY: all clean
