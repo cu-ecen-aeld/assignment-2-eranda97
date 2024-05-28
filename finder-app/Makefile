@@ -9,8 +9,8 @@ SRC := writer.c
 TARGET := writer
 
 # Output file
-OUTPUT_DIR := ../assignments/assignment2
-FILE_RESULT := $(OUTPUT_DIR)/fileresult.txt
+#OUTPUT_DIR := ../assignments/assignment2
+#FILE_RESULT := $(OUTPUT_DIR)/fileresult.txt
 
 # Cross-compilation support
 ifdef CROSS_COMPILE
@@ -25,8 +25,8 @@ $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) -o $@ $^
 
 # Generate fileresult.txt
-$(FILE_RESULT): $(TARGET)
-	file $(TARGET) > $(FILE_RESULT)
+#$(FILE_RESULT): $(TARGET)
+#	file $(TARGET) > $(FILE_RESULT)
 
 # Clean target
 clean:
